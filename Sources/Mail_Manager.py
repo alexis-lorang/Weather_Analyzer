@@ -2,15 +2,11 @@
 # Imports
 ############################################################################
 
-import time
-import Weather_Api
-import Location_Manager
 
 ############################################################################
 # Variables
 ############################################################################
 
-TIME_INTERVALS = 5 # Seconds
 
 ############################################################################
 # Private Methods
@@ -25,18 +21,3 @@ TIME_INTERVALS = 5 # Seconds
 ############################################################################
 # Main
 ############################################################################
-
-# Running the app forever 
-while(1):
-
-    # Waiting TIME_INTERVALS second to run each loop
-    time.sleep(TIME_INTERVALS)
-
-    Locations = Location_Manager.Get_Locations()
-
-    for Location in Locations:
-
-        print(Location["CityName"])
-
-    
-
